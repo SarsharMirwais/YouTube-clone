@@ -1,0 +1,17 @@
+.posts {
+    background-color: #ffee06;
+    grid-row: 3 / -1;
+    grid-column: 2 / -1;
+    color: black;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.new {
+    background-color: rgb(158, 154, 154);
+}

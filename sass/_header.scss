@@ -1,3 +1,29 @@
 .header {
-    background-color: #f10707;
+    background-color: white;
+    display: grid;
+    grid-column: 2 / -1;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 60px;
+    grid-gap: 10rem;
+    padding: 10px;
+
+}
+
+.input-icon {
+    background-color: rgb(76, 0, 255);
+}
+
+.notification-icon {
+    background-color: rgb(11, 201, 235);
+}
+
+.youtube-icon {
+    margin-top: 10px;
+}
+
+.youtube-logo {
+    height: 55%;
+    width: 40%;
+    align-items: center;
+
 }

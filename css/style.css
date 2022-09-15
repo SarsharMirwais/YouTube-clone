@@ -1,11 +1,92 @@
 .header {
-  background-color: #f10707; }
+  background-color: white;
+  display: grid;
+  grid-column: 2 / -1;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 60px;
+  grid-gap: 10rem;
+  padding: 10px; }
+
+.input-icon {
+  background-color: #4c00ff; }
+
+.notification-icon {
+  background-color: #0bc9eb; }
+
+.youtube-icon {
+  margin-top: 10px; }
+
+.youtube-logo {
+  height: 55%;
+  width: 40%;
+  align-items: center; }
+
+.posts {
+  background-color: #ffee06;
+  grid-row: 3 / -1;
+  grid-column: 2 / -1;
+  color: black;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px; }
+
+.new {
+  background-color: #9e9a9a; }
 
 .sidebar {
-  background-color: #07f168; }
+  background-color: #07f168;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: repeat(6, 60px);
+  grid-template-columns: 60px;
+  padding: 10px;
+  grid-gap: 30px; }
+
+.item {
+  background-color: #f504b9; }
 
 .subscriptions {
-  background-color: #8b09f5; }
+  background-color: white;
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: repeat(15, 1fr);
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 20px;
+  grid-gap: 20px;
+  border-bottom: 1px solid #b8b4b4;
+  border-top: 1px solid #b8b4b4; }
+
+.sub {
+  background-color: #f7f2f2;
+  padding: 10px 5px 10px 5px;
+  min-width: 12px;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  border: 0.5px solid #d6d3d3; }
+  .sub--1 {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black; }
+
+.sub2 {
+  background-color: #0a0a0a;
+  padding: 10px 5px 10px 5px;
+  min-width: 12px;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  border: 0.5px solid #d6d3d3; }
+  .sub2--2 {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white; }
 
 *,
 *::before,
@@ -31,5 +112,5 @@ body {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr 4fr 1fr;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-rows: 80px 75px 4fr 1fr;
+  grid-template-columns: 90px 1fr; }
