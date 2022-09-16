@@ -1,25 +1,67 @@
 .header {
   background-color: white;
   display: grid;
-  grid-column: 2 / -1;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 60px;
-  grid-gap: 10rem;
+  grid-column: 1 / -1;
+  grid-template-columns: 1.2fr 5fr 1fr;
+  grid-template-rows: 50px;
+  grid-gap: 20rem;
   padding: 10px; }
-
-.input-icon {
-  background-color: #4c00ff; }
-
-.notification-icon {
-  background-color: #0bc9eb; }
 
 .youtube-icon {
   margin-top: 10px; }
 
 .youtube-logo {
-  height: 55%;
-  width: 40%;
-  align-items: center; }
+  height: 65%;
+  width: 55%;
+  align-items: center;
+  cursor: pointer; }
+
+.input-icon {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 50px;
+  grid-gap: 10px; }
+
+.searching {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 60px; }
+
+.finding {
+  font-size: 20px;
+  font-weight: 400; }
+
+.search-svg {
+  align-items: center;
+  padding: 12px 15px 10px 15px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: #f3eded;
+  cursor: pointer; }
+  .search-svg:hover {
+    background-color: #e7e3e3; }
+
+.microphone {
+  padding: 12px 10px 10px 12px;
+  border-radius: 70px;
+  background-color: #f7f4f4;
+  cursor: pointer; }
+  .microphone:hover {
+    background-color: #e4e1e1; }
+
+.notification-icon {
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: repeat(3, 60px);
+  grid-gap: 1px;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer; }
+
+.cat-profile {
+  height: 70%;
+  width: 65%; }
 
 .posts {
   background-color: #ffee06;
@@ -37,7 +79,7 @@
 
 .sidebar {
   background-color: #07f168;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   display: grid;
   grid-template-rows: repeat(6, 60px);
   grid-template-columns: 60px;
@@ -56,11 +98,11 @@
   padding-top: 8px;
   padding-left: 20px;
   grid-gap: 20px;
-  border-bottom: 1px solid #b8b4b4;
-  border-top: 1px solid #b8b4b4; }
+  border-bottom: 1px solid #aca8a8;
+  border-top: 1px solid #9b9797; }
 
 .sub {
-  background-color: #f7f2f2;
+  background-color: #ece9e9;
   padding: 10px 5px 10px 5px;
   min-width: 12px;
   border-radius: 20px;
