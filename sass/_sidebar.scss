@@ -1,16 +1,137 @@
 .sidebar {
-    background-color: #07f168;
+    background-color: white;
     grid-row: 2 / -1;
 
     display: grid;
-    grid-template-rows: repeat(6, 60px);
-    grid-template-columns: 60px;
-    padding: 10px;
-    grid-gap: 30px;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+    grid-gap: 20px;
+
 }
 
-.item {
-    background-color: rgb(245, 4, 185);
+.bar1 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1.2fr;
+
+
+    &--1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 55px 1fr;
+        background-color: rgb(214, 213, 213);
+        align-items: center;
+        padding-left: 30px;
+
+        &:hover {
+            background-color: rgb(192, 189, 189);
+        }
+    }
+
+    &--2,
+    &--3,
+    &--4 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 55px 1fr;
+        align-items: center;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(233, 231, 231);
+        }
+    }
+
+    &--h {
+
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+
+    }
 }
 
-.svg-item--1 {}
+
+.bar2 {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1.2fr;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    border-top: 1px solid rgb(223, 220, 220);
+
+    &--1,
+    &--2,
+    &--3,
+    &--4,
+    &--5,
+    &--6 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 55px 1fr;
+        align-items: center;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(233, 231, 231);
+        }
+    }
+
+    &--h {
+
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+
+    }
+}
+
+.bar3 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1.2fr;
+    border-bottom: 1px solid rgb(223, 220, 220);
+
+    &--1,
+    &--2,
+    &--3 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 55px 1fr;
+        align-items: center;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(233, 231, 231);
+        }
+    }
+
+
+}
+
+
+.headline--1 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(88, 87, 87);
+    padding-left: 30px;
+
+}
+
+.powell {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.kavin {
+    height: 31px;
+    width: 33px;
+}

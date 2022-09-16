@@ -2,23 +2,27 @@
     background-color: white;
     display: grid;
     grid-column: 1 / -1;
-    grid-template-columns: 1.2fr 5fr 1fr;
+    grid-template-columns: 1.5fr 5fr 1fr;
     grid-template-rows: 50px;
     grid-gap: 20rem;
-    padding: 10px;
+
 
 }
 
-.notification-icon {}
-
 .youtube-icon {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
 .youtube-logo {
-    height: 65%;
-    width: 55%;
+    height: 20px;
+    width: 100px;
     align-items: center;
+    margin-top: 7px;
     cursor: pointer;
 
 }
@@ -26,27 +30,30 @@
 .input-icon {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 4fr 50px;
+    grid-template-columns: 4fr 45px;
     grid-gap: 10px;
+
 
 }
 
 .searching {
     display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 1fr 60px;
+    grid-template-rows: 40px;
+    grid-template-columns: 1fr 50px;
+    margin-top: 10px;
 
 }
 
 .finding {
     font-size: 20px;
     font-weight: 400;
+    padding-left: 10px;
 
 }
 
 .search-svg {
     align-items: center;
-    padding: 12px 15px 10px 15px;
+    padding: 10px 15px 10px 13px;
     border-top: 1px solid gray;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -61,7 +68,10 @@
 }
 
 .microphone {
-    padding: 12px 10px 10px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    padding: 8px 10px 4px 10px;
     border-radius: 70px;
     background-color: rgb(247, 244, 244);
     cursor: pointer;
@@ -71,6 +81,8 @@
     }
 }
 
+.mic-fill {}
+
 
 .notification-icon {
     display: grid;
@@ -78,11 +90,16 @@
     grid-template-columns: repeat(3, 60px);
     grid-gap: 1px;
     align-items: center;
-    padding-left: 20px;
     cursor: pointer;
 }
 
 .cat-profile {
-    height: 70%;
-    width: 65%;
+    height: 60%;
+    width: 55%;
+}
+
+.pending {
+    margin-top: 5px;
+    padding-left: 10px;
+    cursor: pointer;
 }

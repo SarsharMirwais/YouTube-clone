@@ -23,7 +23,7 @@ $font-display: 'Josefin Sans', sans-serif;
     margin: 0;
     box-sizing: inherit;
 
-    
+
 }
 
 html {
@@ -31,6 +31,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
+    --color-primary: #c69963
 }
 
 body {
