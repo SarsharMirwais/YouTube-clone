@@ -14,20 +14,6 @@
   grid-template-columns: 1fr 202px;
   gap: 1rem; }
 
-.youtube-icon {
-  margin-top: 10px;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 60px 2fr;
-  background-color: white; }
-
-.youtube-logo {
-  height: 22px;
-  width: 90px;
-  align-items: center;
-  margin-top: 8px;
-  cursor: pointer; }
-
 .input-icon {
   display: grid;
   grid-template-rows: 1fr;
@@ -83,11 +69,6 @@
   height: 40px;
   width: 40px; }
 
-.pending {
-  margin-top: 5px;
-  padding-left: 10px;
-  cursor: pointer; }
-
 .posts {
   background-color: #f7f3f3;
   grid-row: 3 / -1;
@@ -140,17 +121,48 @@
   text-align: center;
   transform: translateY(1px); }
 
+.sidebars {
+  display: grid;
+  grid-row: 1/ -1;
+  grid-column: 1 / 2;
+  position: relative; }
+
 .sidebar {
   background-color: white;
-  grid-row: 2 / -1;
+  position: sticky;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 45px 1fr 2fr 1fr;
   grid-template-columns: 1fr;
   padding-top: 10px;
   grid-gap: 20px;
-  position: sticky;
   left: 0;
-  height: 100vh; }
+  height: 100vh;
+  left: 0; }
+
+.bar0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50px 1fr;
+  padding-left: 20px; }
+
+.youtube-icon {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 60px 2fr;
+  background-color: white; }
+
+.youtube-logo {
+  height: 22px;
+  width: 90px;
+  align-items: center;
+  margin-top: 8px;
+  cursor: pointer; }
+
+.pending {
+  margin-top: 5px;
+  padding-left: 10px;
+  cursor: pointer; }
 
 .bar1 {
   display: grid;
@@ -274,8 +286,8 @@
   padding-top: 10px;
   border: 0.5px solid #d6d3d3; }
   .sub2--2 {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 10px;
+    font-weight: 600;
     text-decoration: none;
     color: white; }
 

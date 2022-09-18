@@ -20,24 +20,6 @@
     gap: 1rem;
 }
 
-.youtube-icon {
-    margin-top: 10px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 60px 2fr;
-    background-color: white;
-
-}
-
-.youtube-logo {
-    height: 22px;
-    width: 90px;
-    align-items: center;
-    margin-top: 8px;
-    cursor: pointer;
-
-}
-
 .input-icon {
     display: grid;
     grid-template-rows: 1fr;
@@ -113,10 +95,4 @@
 .cat-profile {
     height: 40px;
     width: 40px;
-}
-
-.pending {
-    margin-top: 5px;
-    padding-left: 10px;
-    cursor: pointer;
 }
