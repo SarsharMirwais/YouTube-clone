@@ -1,31 +1,39 @@
 .header {
   background-color: white;
   display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: 1.5fr 5fr 1fr;
+  grid-column: 2 / -1;
+  grid-template-columns: 1fr;
+  grid-template-rows: 55px 59px;
+  position: sticky;
+  top: 0;
+  z-index: 999999; }
+
+.header-divider {
+  display: grid;
   grid-template-rows: 50px;
-  grid-gap: 20rem; }
+  grid-template-columns: 1fr 202px;
+  gap: 1rem; }
 
 .youtube-icon {
   margin-top: 10px;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 2fr;
-  margin-left: 10px;
-  margin-top: 10px; }
+  grid-template-columns: 60px 2fr;
+  background-color: white; }
 
 .youtube-logo {
-  height: 20px;
-  width: 100px;
+  height: 22px;
+  width: 90px;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 8px;
   cursor: pointer; }
 
 .input-icon {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 4fr 45px;
-  grid-gap: 10px; }
+  grid-template-columns: 70rem 45px;
+  grid-gap: 10px;
+  padding-left: 20rem; }
 
 .searching {
   display: grid;
@@ -36,14 +44,16 @@
 .finding {
   font-size: 20px;
   font-weight: 400;
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: #dbd9d9;
+  border: 1px solid #c5c3c3; }
 
 .search-svg {
   align-items: center;
   padding: 10px 15px 10px 13px;
-  border-top: 1px solid gray;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #c5c3c3;
+  border-right: 1px solid #c5c3c3;
+  border-bottom: 1px solid #c5c3c3;
   background-color: #f3eded;
   cursor: pointer; }
   .search-svg:hover {
@@ -63,14 +73,15 @@
 .notification-icon {
   display: grid;
   grid-template-rows: 60px;
-  grid-template-columns: repeat(3, 60px);
-  grid-gap: 1px;
-  align-items: center;
-  cursor: pointer; }
+  grid-template-columns: 60px 60px 1fr;
+  margin-top: 10px;
+  float: right;
+  cursor: pointer;
+  padding-left: 10px; }
 
 .cat-profile {
-  height: 60%;
-  width: 55%; }
+  height: 40px;
+  width: 40px; }
 
 .pending {
   margin-top: 5px;
@@ -98,7 +109,8 @@
 
 .video-img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
 
 .detials {
   display: grid;
@@ -118,7 +130,10 @@
 
 .kavin-c-name {
   font-size: 10px;
-  font-weight: 400; }
+  font-weight: 400;
+  cursor: pointer; }
+  .kavin-c-name:hover {
+    text-decoration: underline; }
 
 .yt-icon {
   align-items: center;
@@ -132,7 +147,10 @@
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-columns: 1fr;
   padding-top: 10px;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  position: sticky;
+  left: 0;
+  height: 100vh; }
 
 .bar1 {
   display: grid;
@@ -218,39 +236,45 @@
 .subscriptions {
   background-color: white;
   display: grid;
-  grid-template-rows: 60px;
-  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: 30px;
+  grid-template-columns: 40px repeat(19, 1fr);
   align-items: center;
   padding-left: 20px;
+  padding-top: 8px;
   grid-gap: 20px;
-  border-bottom: 1px solid #aca8a8;
-  border-top: 1px solid #9b9797; }
+  border-bottom: 1px solid #c5c3c3;
+  border-top: 1px solid #c5c3c3;
+  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.subscriptions::-webkit-scrollbar {
+  width: 0; }
 
 .sub {
   background-color: #ece9e9;
   padding: 8px 3px 8px 3px;
-  min-width: 12px;
   border-radius: 20px;
   align-items: center;
   text-align: center;
   border: 0.5px solid #d6d3d3; }
   .sub--1 {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     text-decoration: none;
     color: black; }
 
 .sub2 {
   background-color: #0a0a0a;
-  padding: 10px 5px 10px 5px;
+  padding: 0px 5px 8px 5px;
   min-width: 12px;
-  border-radius: 20px;
+  border-radius: 19px;
   align-items: center;
   text-align: center;
   padding-top: 10px;
   border: 0.5px solid #d6d3d3; }
   .sub2--2 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     text-decoration: none;
     color: white; }
@@ -278,8 +302,9 @@ body {
 
 .container {
   background-color: #eee;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: grid;
   grid-template-rows: 60px 60px 4fr 1fr;
-  grid-template-columns: 1fr 6.1fr; }
+  grid-template-columns: 1fr 6.1fr;
+  position: relative; }

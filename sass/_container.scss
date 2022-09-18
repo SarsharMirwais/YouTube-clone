@@ -1,11 +1,13 @@
 .container {
     background-color: #eee;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     display: grid;
     grid-template-rows: 60px 60px 4fr 1fr;
     grid-template-columns: 1fr 6.1fr;
+
+    position: relative;
 
 
 }

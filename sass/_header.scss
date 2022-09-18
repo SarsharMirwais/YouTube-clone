@@ -1,28 +1,39 @@
 .header {
     background-color: white;
     display: grid;
-    grid-column: 1 / -1;
-    grid-template-columns: 1.5fr 5fr 1fr;
+    grid-column: 2 / -1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 59px;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+
+
+
+
+}
+
+.header-divider {
+    display: grid;
     grid-template-rows: 50px;
-    grid-gap: 20rem;
-
-
+    grid-template-columns: 1fr 202px;
+    gap: 1rem;
 }
 
 .youtube-icon {
     margin-top: 10px;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr;
-    margin-left: 10px;
-    margin-top: 10px;
+    grid-template-columns: 60px 2fr;
+    background-color: white;
+
 }
 
 .youtube-logo {
-    height: 20px;
-    width: 100px;
+    height: 22px;
+    width: 90px;
     align-items: center;
-    margin-top: 7px;
+    margin-top: 8px;
     cursor: pointer;
 
 }
@@ -30,8 +41,11 @@
 .input-icon {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 4fr 45px;
+    grid-template-columns: 70rem 45px;
     grid-gap: 10px;
+    padding-left: 20rem;
+
+
 
 
 }
@@ -42,21 +56,23 @@
     grid-template-columns: 1fr 50px;
     margin-top: 10px;
 
+
 }
 
 .finding {
     font-size: 20px;
     font-weight: 400;
     padding-left: 10px;
-
+    color: rgb(219, 217, 217);
+    border: 1px solid rgb(197, 195, 195);
 }
 
 .search-svg {
     align-items: center;
     padding: 10px 15px 10px 13px;
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid rgb(197, 195, 195);
+    border-right: 1px solid rgb(197, 195, 195);
+    border-bottom: 1px solid rgb(197, 195, 195);
     background-color: rgb(243, 237, 237);
     cursor: pointer;
 
@@ -81,21 +97,22 @@
     }
 }
 
-.mic-fill {}
+
 
 
 .notification-icon {
     display: grid;
     grid-template-rows: 60px;
-    grid-template-columns: repeat(3, 60px);
-    grid-gap: 1px;
-    align-items: center;
+    grid-template-columns: 60px 60px 1fr;
+    margin-top: 10px;
+    float: right;
     cursor: pointer;
+    padding-left: 10px;
 }
 
 .cat-profile {
-    height: 60%;
-    width: 55%;
+    height: 40px;
+    width: 40px;
 }
 
 .pending {

@@ -16,113 +16,120 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="youtube-icon">
-                <div class="pending">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
-                        class="style-scope yt-icon" width="24" height="24" fill="currentColor">
-                        <g class="style-scope yt-icon">
-                            <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon">
-                            </path>
-                        </g>
-                    </svg>
-                </div>
-                <div class="youtube-img">
-                    <img src="img/YouTube-Logo.png" alt="#" class="youtube-logo" alt="youtube-logo">
-                </div>
-            </div>
-            <div class="input-icon">
-                <div class="searching">
-                    <input type="text" name="search" placeholder="Search" class="finding">
-                    <div class="search-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
+            <div class="header-divider">
+
+                <div class="input-icon">
+                    <div class="searching">
+                        <input type="text" name="search" placeholder="Search" class="finding">
+                        <div class="search-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="microphone">
+                        <svg xmlns="http://www.w3.org/2000/svg" color="black" width="22" height="22" fill="currentColor"
+                            class="mic-fill" viewBox="0 0 16 16">
+                            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                             <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
                         </svg>
                     </div>
                 </div>
-                <div class="microphone">
-                    <svg xmlns="http://www.w3.org/2000/svg" color="black" width="22" height="22" fill="currentColor"
-                        class="mic-fill" viewBox="0 0 16 16">
-                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
-                        <path
-                            d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
-                    </svg>
+                <div class="notification-icon">
+                    <div class="creat">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon" color="black" width="26" height="26" fill="currentColor">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="notifications">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon" color="black" width="26" height="26" fill="currentColor">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="profile">
+                        <img src="img/profile-cat.png" alt="cat-profile" class="cat-profile">
+                    </div>
                 </div>
             </div>
-            <div class="notification-icon">
-                <div class="creat">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
-                        class="style-scope yt-icon" color="black" width="26" height="26" fill="currentColor">
-                        <g class="style-scope yt-icon">
-                            <path
-                                d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"
-                                class="style-scope yt-icon"></path>
-                        </g>
-                    </svg>
+
+            <div class="subscriptions">
+                <div class="sub sub2">
+                    <a href="#" class="sub2--2">ALL</a>
                 </div>
-                <div class="notifications">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
-                        class="style-scope yt-icon" color="black" width="26" height="26" fill="currentColor">
-                        <g class="style-scope yt-icon">
-                            <path
-                                d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
-                                class="style-scope yt-icon"></path>
-                        </g>
-                    </svg>
+                <div class="sub">
+                    <a href="#" class="sub--1">Music</a>
                 </div>
-                <div class="profile">
-                    <img src="img/profile-cat.png" alt="cat-profile" class="cat-profile">
+                <div class="sub">
+                    <a href="#" class="sub--1">Mixes</a>
+                </div>
+                <div class="sub ">
+                    <a href="#" class="sub--1">Live</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Snow</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Studio</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Satire</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Dramedy</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Gaming</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Scene</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Gadgade</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">CSS</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">HTML</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Code</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Football</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Football</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Football</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Football</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Football</a>
+                </div>
+                <div class="sub">
+                    <a href="#" class="sub--1">Football</a>
                 </div>
             </div>
+
         </div>
-        <div class="subscriptions">
-            <div class="sub2">
-                <a href="#" class="sub2--2">ALL</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Music</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Mixes</a>
-            </div>
-            <div class="sub ">
-                <a href="#" class="sub--1">Live</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Jon Snow</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Studio</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Satire</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Dramedy</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Gaming</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Scene</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Gadgade</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">CSS</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">HTML</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Code</a>
-            </div>
-            <div class="sub">
-                <a href="#" class="sub--1">Football</a>
-            </div>
-        </div>
+
         <div class="posts">
             <div class="new post--1">
                 <div class="video">
@@ -161,14 +168,6 @@
                             <h2 class="kavin-title">Man City 2:1 Dortmund | UEFA Çempionlar Liqası, 2-ci tur | İCMAL
                             </h2>
                             <h3 class="kavin-c-name">CBC Sport
-                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
-                                    class="style-scope yt-icon" color="gray" width="12" height="12" fill="currentColor">
-                                    <g class="style-scope yt-icon">
-                                        <path
-                                            d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
-                                            class="style-scope yt-icon"></path>
-                                    </g>
-                                </svg>
                             </h3>
                             <h3 class="kavin-c-name">85.8K views . 10 day ago</h3>
                         </div>
@@ -317,14 +316,150 @@
                         <div class="kavin-chanal">
                             <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
                             <h3 class="kavin-c-name">My Lesson
-                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
-                                    class="style-scope yt-icon" color="gray" width="12" height="12" fill="currentColor">
-                                    <g class="style-scope yt-icon">
-                                        <path
-                                            d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
-                                            class="style-scope yt-icon"></path>
-                                    </g>
-                                </svg>
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
+                            </h3>
+                            <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="new post--1">
+                <div class="video">
+                    <img src="img/DEVELOPER.jpg" alt="kavin-post" class="video-img">
+                </div>
+                <div class="detials">
+                    <div class="kavin-profile">
+                        <img src="img/my lessons.png" alt="kavin" class="kavin">
+                        <div class="kavin-chanal">
+                            <h2 class="kavin-title">Web Development Full Course (Front End) | HTML,CSS,JavaScript</h2>
+                            <h3 class="kavin-c-name">My Lesson
                             </h3>
                             <h3 class="kavin-c-name">197K views . 9 Jun 2022</h3>
                         </div>
@@ -334,7 +469,25 @@
                 </div>
             </div>
         </div>
+
+
         <div class="sidebar">
+            <!--<div class="youtube-icon">
+                <div class="pending">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon" width="24" height="24" fill="currentColor">
+                        <g class="style-scope yt-icon">
+                            <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z"
+                                class="style-scope yt-icon">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="youtube-img">
+                    <img src="img/YouTube-Logo.png" alt="#" class="youtube-logo" alt="youtube-logo">
+                </div>
+            </div>-->
+
             <div class="bar1">
                 <div class="bar1--1">
                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
