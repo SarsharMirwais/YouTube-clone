@@ -10,16 +10,16 @@
 
 .header-divider {
   display: grid;
-  grid-template-rows: 50px;
-  grid-template-columns: 1fr 202px;
+  grid-template-rows: 50%;
+  grid-template-columns: auto 20%;
   gap: 1rem; }
 
 .input-icon {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 70rem 45px;
+  grid-template-columns: 70% auto;
   grid-gap: 10px;
-  padding-left: 20rem; }
+  justify-content: center; }
 
 .searching {
   display: grid;
@@ -53,7 +53,7 @@
   border-radius: 70px;
   background-color: #f7f4f4;
   cursor: pointer; }
-  .microphone:hover {
+  pad .microphone:hover {
     background-color: #e4e1e1; }
 
 .notification-icon {
@@ -63,7 +63,7 @@
   margin-top: 10px;
   float: right;
   cursor: pointer;
-  padding-left: 10px; }
+  justify-content: end; }
 
 .cat-profile {
   height: 40px;
@@ -75,8 +75,7 @@
   grid-column: 2 / -1;
   color: black;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 15px;
   padding: 20px; }
 
@@ -87,6 +86,10 @@
   display: grid;
   grid-template-rows: 1fr 100px;
   grid-template-columns: 1fr; }
+  .post--1:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 
 .video-img {
   height: 100%;
@@ -129,7 +132,6 @@
 
 .sidebar {
   background-color: white;
-  position: sticky;
   display: grid;
   grid-template-rows: 45px 1fr 2fr 1fr;
   grid-template-columns: 1fr;

@@ -15,17 +15,18 @@
 
 .header-divider {
     display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 1fr 202px;
+    grid-template-rows: 50%;
+    grid-template-columns: auto 20%;
     gap: 1rem;
 }
 
 .input-icon {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 70rem 45px;
+    grid-template-columns: 70% auto;
     grid-gap: 10px;
-    padding-left: 20rem;
+    justify-content: center;
+
 
 
 
@@ -74,7 +75,7 @@
     background-color: rgb(247, 244, 244);
     cursor: pointer;
 
-    &:hover {
+    pad &:hover {
         background-color: rgb(228, 225, 225);
     }
 }
@@ -89,7 +90,7 @@
     margin-top: 10px;
     float: right;
     cursor: pointer;
-    padding-left: 10px;
+    justify-content: end;
 }
 
 .cat-profile {
