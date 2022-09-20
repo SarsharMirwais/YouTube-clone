@@ -3,10 +3,10 @@
     display: grid;
     grid-column: 2 / -1;
     grid-template-columns: 1fr;
-    grid-template-rows: 55px 59px;
+    grid-template-rows: 55px 82px;
     position: sticky;
     top: 0;
-    z-index: 999999;
+    z-index: 1;
 
 
 
@@ -16,14 +16,14 @@
 .header-divider {
     display: grid;
     grid-template-rows: 50%;
-    grid-template-columns: auto 20%;
+    grid-template-columns: auto 13%;
     gap: 1rem;
 }
 
 .input-icon {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 55% auto;
     grid-gap: 10px;
     justify-content: center;
 

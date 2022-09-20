@@ -1,0 +1,88 @@
+.next-page {
+    display: grid;
+    grid-row: 2/ -1;
+    grid-column: 2/ -1;
+    height: 90vh;
+    width: 70%;
+    margin-top: 3rem;
+
+    grid-template-rows: auto 20% 20%;
+
+}
+
+
+
+.some-comment {
+    background-color: green;
+}
+
+.parah22 {
+
+    &--1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: black;
+        padding-top: 1rem;
+    }
+}
+
+.n-profile {
+    display: grid;
+    grid-template-columns: 20% 20% auto;
+    padding-top: 10px;
+}
+
+.person-name {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.person-name2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(184, 180, 180);
+    line-height: 35px;
+}
+
+.person-logo {
+    height: 7.5rem;
+    width: 9rem;
+}
+
+.pro-details {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 50%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ring {
+
+
+    display: grid;
+    grid-template-columns: auto 50%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+
+
+    &--button {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: rgb(24, 23, 23);
+        background-color: rgb(235, 230, 230);
+        text-decoration: none
+    }
+
+
+}
+
+.next-pagering {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
