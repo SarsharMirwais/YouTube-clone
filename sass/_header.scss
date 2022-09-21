@@ -75,7 +75,7 @@
     background-color: var(--var-dark1-color);
     cursor: pointer;
 
-    pad &:hover {
+    &:hover {
         background-color: var(--var-hover-color);
     }
 }

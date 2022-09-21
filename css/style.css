@@ -53,7 +53,7 @@
   border-radius: 70px;
   background-color: var(--var-dark1-color);
   cursor: pointer; }
-  pad .microphone:hover {
+  .microphone:hover {
     background-color: var(--var-hover-color); }
 
 .notification-icon {
