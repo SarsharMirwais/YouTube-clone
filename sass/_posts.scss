@@ -1,8 +1,8 @@
 .posts {
-    background-color: rgb(247, 243, 243);
+    background-color: var(--var-dark1-color);
     grid-row: 3 / -1;
     grid-column: 2 / -1;
-    color: black;
+    color: var(--var-black-color);
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -13,7 +13,7 @@
 }
 
 .new {
-    background-color: rgb(247, 243, 243);
+    background-color: var(--var-dark1-color);
 
 }
 
@@ -26,7 +26,7 @@
     &:hover {
         transform: scale(1.1);
         transition: all 0.4s ease;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: var(--var-black-color) 0px 3px 8px;
 
     }
 }

@@ -12,7 +12,7 @@
 }
 
 .some-comment {
-    background-color: rgb(235, 235, 235);
+    background-color: var(--var-hover-color);
     border-radius: 15px;
     margin-bottom: 3rem;
 }
@@ -21,7 +21,7 @@
     font-size: 18px;
     font-weight: 500;
     padding: 10px;
-    color: black;
+    color: var(--var-black-color);
 
 }
 
@@ -29,7 +29,7 @@
     font-size: 15px;
     font-weight: 400;
     padding-left: 10px;
-    color: rgb(5, 5, 5);
+    color: var(--var-black-color);
 
 }
 
@@ -38,7 +38,7 @@
     font-size: 15px;
     font-weight: 600;
     padding-left: 10px;
-    color: rgb(8, 8, 8);
+    color: var(--var-black-color);
     cursor: pointer;
 
 
@@ -51,7 +51,7 @@
     &--1 {
         font-size: 22px;
         font-weight: 500;
-        color: black;
+        color: var(--var-black-color);
         padding-top: 1rem;
     }
 }
@@ -65,7 +65,7 @@
 .person-name {
     font-size: 18px;
     font-weight: 500;
-    color: black;
+    color: var(--var-black-color);
     padding-left: 10px;
 
 }
@@ -73,7 +73,7 @@
 .person-name2 {
     font-size: 15px;
     font-weight: 400;
-    color: rgb(184, 180, 180);
+    color: var(--var-dark3-color);
     line-height: 20px;
     padding-left: 10px;
 }
@@ -107,12 +107,12 @@
         font-weight: 500;
         padding: 10px 20px;
         border-radius: 30px;
-        color: rgb(24, 23, 23);
-        background-color: rgb(235, 230, 230);
+        color: var(--var-black-color);
+        background-color: var(--var-dark1-color);
         text-decoration: none;
 
         &:hover {
-            background-color: rgb(214, 209, 209);
+            background-color: var(--var-hover-color);
         }
     }
 

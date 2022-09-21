@@ -1,5 +1,5 @@
 .header {
-    background-color: white;
+    background-color: var(--var-white-color);
     display: grid;
     grid-column: 2 / -1;
     grid-template-columns: 1fr;
@@ -46,21 +46,21 @@
     font-size: 20px;
     font-weight: 400;
     padding-left: 10px;
-    color: rgb(219, 217, 217);
-    border: 1px solid rgb(197, 195, 195);
+    color: var(--var-find-color);
+    border: 1px solid var(--var-gray-color);
 }
 
 .search-svg {
     align-items: center;
     padding: 10px 15px 10px 13px;
-    border-top: 1px solid rgb(197, 195, 195);
-    border-right: 1px solid rgb(197, 195, 195);
-    border-bottom: 1px solid rgb(197, 195, 195);
-    background-color: rgb(243, 237, 237);
+    border-top: 1px solid var(--var-gray-color);
+    border-right: 1px solid var(--var-gray-color);
+    border-bottom: 1px solid var(--var-gray-color);
+    background-color: var(--var-dark1-color);
     cursor: pointer;
 
     &:hover {
-        background-color: rgb(231, 227, 227);
+        background-color: var(--var-hover-color);
     }
 
 
@@ -72,11 +72,11 @@
     margin-left: 2px;
     padding: 8px 10px 4px 10px;
     border-radius: 70px;
-    background-color: rgb(247, 244, 244);
+    background-color: var(--var-dark1-color);
     cursor: pointer;
 
     pad &:hover {
-        background-color: rgb(228, 225, 225);
+        background-color: var(--var-hover-color);
     }
 }
 
