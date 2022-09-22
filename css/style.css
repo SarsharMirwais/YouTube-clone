@@ -3,7 +3,7 @@
   display: grid;
   grid-column: 2 / -1;
   grid-template-columns: 1fr;
-  grid-template-rows: 55px 82px;
+  grid-template-rows: 55px 80px;
   position: sticky;
   top: 0;
   z-index: 1; }
@@ -11,7 +11,7 @@
 .header-divider {
   display: grid;
   grid-template-rows: 50%;
-  grid-template-columns: auto 13%;
+  grid-template-columns: 87% 13%;
   gap: 1rem; }
 
 .input-icon {
@@ -258,7 +258,7 @@
   grid-template-rows: 30px;
   grid-template-columns: 40px repeat(19, 1fr);
   align-items: center;
-  padding-left: 20px;
+  padding-left: 24px;
   padding-top: 20px;
   grid-gap: 20px;
   border-bottom: 1px solid var(--var-gray-color);
@@ -272,8 +272,8 @@
 
 .sub {
   background-color: var(--var-dark1-color);
-  padding: 8px 3px 8px 3px;
-  border-radius: 20px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 15px;
   align-items: center;
   text-align: center;
   border: 0.5px solid var(--var-gray-color); }
@@ -341,7 +341,7 @@ body {
   grid-column: 2/ -1;
   height: 90vh;
   width: 70%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   grid-template-rows: auto 20% 20%; }
 
 .some-comment {

@@ -5,7 +5,7 @@
     grid-template-rows: 30px;
     grid-template-columns: 40px repeat(19, 1fr);
     align-items: center;
-    padding-left: 20px;
+    padding-left: 24px;
     padding-top: 20px;
     grid-gap: 20px;
     border-bottom: 1px solid var(--var-gray-color);
@@ -27,8 +27,8 @@
 
 .sub {
     background-color: var(--var-dark1-color);
-    padding: 8px 3px 8px 3px;
-    border-radius: 20px;
+    padding: 8px 8px 8px 8px;
+    border-radius: 15px;
     align-items: center;
     text-align: center;
     border: .5px solid var(--var-gray-color);
