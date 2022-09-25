@@ -1,16 +1,23 @@
 .sidebars {
     display: grid;
-    grid-row: 1/ -1;
+    grid-row: 2/ -1;
     grid-column: 1 / 2;
     position: relative;
     z-index: 999999;
+    min-width: 14vw;
+
+    @media screen and (max-width: 1300px) {
+        min-width: 7vw;
+    }
+
+
 }
 
 .sidebar {
     background-color: var(--var-white-color);
 
     display: grid;
-    grid-template-rows: 45px 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 1fr;
     padding-top: 10px;
     grid-gap: 20px;
@@ -20,6 +27,12 @@
     position: fixed;
     min-width: 14vw;
 
+    @media screen and (max-width: 1300px) {
+        min-width: 7vw;
+    }
+
+
+
 }
 
 .bar0 {
@@ -27,6 +40,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 50px 1fr;
     padding-left: 20px;
+    align-items: center;
 }
 
 .youtube-icon {
@@ -58,6 +72,13 @@
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1.2fr;
 
+    @media screen and (max-width: 1300px) {
+        width: 10px;
+        display: grid;
+        grid-template-rows: repeat(4, 50);
+        grid-template-columns: 100px;
+    }
+
 
     &--1 {
         display: grid;
@@ -69,6 +90,15 @@
 
         &:hover {
             background-color: var(--var-hover-color);
+        }
+
+        @media screen and (max-width: 1300px) {
+            display: grid;
+            grid-template-rows: 20% auto;
+            grid-template-columns: 5%;
+            align-items: center;
+            background-color: var(--var-white-color);
+
         }
     }
 
@@ -85,7 +115,16 @@
         &:hover {
             background-color: var(--var-hover-color);
         }
+
+        @media screen and (max-width: 1300px) {
+            display: grid;
+            grid-template-rows: 20% auto;
+            grid-template-columns: 20%;
+            align-items: center;
+            padding-left: 30px;
+        }
     }
+
 
     &--h {
 
@@ -94,7 +133,25 @@
         text-decoration: none;
         color: var(--var-black-color);
 
+
     }
+
+    &--h2 {
+
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--var-black-color);
+
+        @media screen and (max-width: 1300px) {
+            text-align: center;
+            transform: translateX(-18px);
+
+        }
+
+    }
+
+
 }
 
 
@@ -131,6 +188,10 @@
         color: var(--var-black-color);
 
     }
+
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
 }
 
 .bar3 {
@@ -152,6 +213,10 @@
         &:hover {
             background-color: var(--var-hover-color);
         }
+    }
+
+    @media screen and (max-width: 1300px) {
+        display: none;
     }
 
 
@@ -177,4 +242,14 @@
 .kavin {
     height: 31px;
     width: 33px;
+}
+
+.fix-logo {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 1/ 2;
+    position: fixed;
+    align-items: center;
+    padding-top: 1rem;
+    z-index: 99999;
 }
