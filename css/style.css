@@ -473,7 +473,7 @@ body {
 
 .page2 {
   height: 100%;
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 55px 4fr;
@@ -484,7 +484,7 @@ body {
   grid-column: 1/-1;
   grid-row: 1/2;
   grid-template-rows: 55px;
-  grid-template-columns: 10% 2fr 18%;
+  grid-template-columns: 5% 1fr 10%;
   gap: 2rem; }
 
 .page2-main {
@@ -533,7 +533,7 @@ body {
 
 .n-profile {
   display: grid;
-  grid-template-columns: 20% 29% 49%;
+  grid-template-columns: 17% 22% 60%;
   padding-top: 10px; }
 
 .person-name {
@@ -591,18 +591,21 @@ body {
 
 .like-1 {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 61%;
   font-size: 18px;
   font-weight: 400;
   color: var(--var-black-color);
   text-align: center;
   align-items: center;
   background-color: var(--var-dark1-color);
-  padding: 8px;
+  padding: 0px 4px;
   border-radius: 30px;
   cursor: pointer; }
   .like-1:hover {
     background-color: var(--var-hover-color); }
+  @media screen and (max-width: 1400px) {
+    .like-1 {
+      grid-template-columns: 40% 61%; } }
 
 .img-relatives {
   cursor: pointer; }
@@ -611,7 +614,7 @@ body {
     height: 100%;
     max-width: 50rem;
 }*/
-.bar0 {
+.bar-page2 {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 50px 1fr;
@@ -635,4 +638,26 @@ body {
 .pending {
   margin-top: 5px;
   padding-left: 10px;
+  cursor: pointer; }
+
+.input-icon2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 55% auto;
+  grid-gap: 10px;
+  justify-content: center; }
+
+.searching-page2 {
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 1fr 50px;
+  margin-top: 10px; }
+
+.microphone2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  padding: 8px 10px 4px 10px;
+  border-radius: 70px;
+  background-color: var(--var-dark1-color);
   cursor: pointer; }
