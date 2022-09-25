@@ -211,7 +211,7 @@
       padding-left: 1px; } }
   @media screen and (max-width: 500px) {
     .bar0 {
-      grid-template-columns: 27px 1fr;
+      grid-template-columns: 40px 1fr;
       padding-left: 0px; } }
   @media screen and (max-width: 330px) {
     .bar0 {
@@ -402,6 +402,9 @@
   overflow-x: auto;
   overflow-x: scroll;
   overflow-y: hidden; }
+  @media screen and (max-width: 550px) {
+    .subscriptions {
+      padding-left: 4rem; } }
 
 .subscriptions::-webkit-scrollbar {
   width: 0; }
