@@ -11,8 +11,16 @@
 .header-divider {
   display: grid;
   grid-template-rows: 50%;
-  grid-template-columns: 87% 13%;
+  grid-template-columns: 89% 13%;
   gap: 1rem; }
+  @media screen and (max-width: 1500px) {
+    .header-divider {
+      grid-template-columns: 80% 13%;
+      gap: 1rem; } }
+  @media screen and (max-width: 1500px) {
+    .header-divider {
+      grid-template-columns: 80% 13%;
+      gap: 1rem; } }
 
 .input-icon {
   display: grid;
@@ -26,6 +34,28 @@
   grid-template-rows: 40px;
   grid-template-columns: 1fr 50px;
   margin-top: 10px; }
+  @media screen and (max-width: 800px) {
+    .searching {
+      grid-template-columns: 250px 50px; } }
+  @media screen and (max-width: 780px) {
+    .searching {
+      grid-template-columns: 230px 50px; } }
+  @media screen and (max-width: 670px) {
+    .searching {
+      grid-template-columns: 200px 50px; } }
+  @media screen and (max-width: 630px) {
+    .searching {
+      grid-template-columns: 180px 50px; } }
+  @media screen and (max-width: 600px) {
+    .searching {
+      grid-template-columns: 150px 50px; } }
+  @media screen and (max-width: 550px) {
+    .searching {
+      grid-template-columns: 120px 50px; } }
+  @media screen and (max-width: 450px) {
+    .searching {
+      grid-template-columns: 80px 50px;
+      padding-left: 2rem; } }
 
 .finding {
   font-size: 20px;
@@ -55,6 +85,9 @@
   cursor: pointer; }
   .microphone:hover {
     background-color: var(--var-hover-color); }
+  @media screen and (max-width: 730px) {
+    .microphone {
+      display: none; } }
 
 .notification-icon {
   display: grid;
@@ -64,6 +97,9 @@
   float: right;
   cursor: pointer;
   justify-content: end; }
+  @media screen and (max-width: 550px) {
+    .notification-icon {
+      grid-template-columns: 60% 60% 1fr; } }
 
 .cat-profile {
   height: 40px;
@@ -136,6 +172,9 @@
   @media screen and (max-width: 1300px) {
     .sidebars {
       min-width: 7vw; } }
+  @media screen and (max-width: 405px) {
+    .sidebars {
+      display: none; } }
 
 .sidebar {
   background-color: var(--var-white-color);
@@ -158,7 +197,25 @@
   grid-template-rows: 1fr;
   grid-template-columns: 50px 1fr;
   padding-left: 20px;
-  align-items: center; }
+  align-items: center;
+  display: grid;
+  grid-row: 1/ 2;
+  grid-column: 1/ 2;
+  position: fixed;
+  align-items: center;
+  padding-top: 1rem;
+  z-index: 99999; }
+  @media screen and (max-width: 600px) {
+    .bar0 {
+      grid-template-columns: 36px 1fr;
+      padding-left: 1px; } }
+  @media screen and (max-width: 500px) {
+    .bar0 {
+      grid-template-columns: 27px 1fr;
+      padding-left: 0px; } }
+  @media screen and (max-width: 330px) {
+    .bar0 {
+      padding-left: 1px; } }
 
 .youtube-icon {
   margin-top: 10px;
@@ -167,12 +224,33 @@
   grid-template-columns: 60px 2fr;
   background-color: var(--var-white-color); }
 
-.youtube-logo {
-  height: 22px;
-  width: 90px;
+.youtube-icon {
+  height: 27px;
+  width: 100px;
   align-items: center;
-  margin-top: 8px;
-  cursor: pointer; }
+  margin-bottom: 8px;
+  cursor: pointer;
+  margin-right: 1rem; }
+  @media screen and (max-width: 670px) {
+    .youtube-icon {
+      height: 18px;
+      width: 77px; } }
+  @media screen and (max-width: 600px) {
+    .youtube-icon {
+      height: 18px;
+      width: 77px; } }
+  @media screen and (max-width: 550px) {
+    .youtube-icon {
+      height: 18px;
+      width: 60px; } }
+  @media screen and (max-width: 500px) {
+    .youtube-icon {
+      height: 18px;
+      width: 60px; } }
+  @media screen and (max-width: 330px) {
+    .youtube-icon {
+      height: 14px;
+      width: 50px; } }
 
 .pending {
   margin-top: 5px;
@@ -188,7 +266,8 @@
       width: 10px;
       display: grid;
       grid-template-rows: repeat(4, 50);
-      grid-template-columns: 100px; } }
+      grid-template-columns: 100px;
+      gap: 1rem; } }
   .bar1--1 {
     display: grid;
     grid-template-rows: 1fr;
@@ -226,6 +305,10 @@
     font-weight: 500;
     text-decoration: none;
     color: var(--var-black-color); }
+    @media screen and (max-width: 600px) {
+      .bar1--h {
+        font-size: 8px;
+        font-weight: 500; } }
   .bar1--h2 {
     font-size: 12px;
     font-weight: 500;
@@ -235,6 +318,16 @@
       .bar1--h2 {
         text-align: center;
         transform: translateX(-18px); } }
+    @media screen and (max-width: 600px) {
+      .bar1--h2 {
+        font-size: 8px;
+        font-weight: 500;
+        transform: translateX(-12px); } }
+    @media screen and (max-width: 460px) {
+      .bar1--h2 {
+        font-size: 6px;
+        font-weight: 500;
+        transform: translateX(-6px); } }
 
 .bar2 {
   display: grid;
@@ -294,15 +387,6 @@
 .kavin {
   height: 31px;
   width: 33px; }
-
-.fix-logo {
-  display: grid;
-  grid-row: 1/ 2;
-  grid-column: 1/ 2;
-  position: fixed;
-  align-items: center;
-  padding-top: 1rem;
-  z-index: 99999; }
 
 .subscriptions {
   background-color: var(--var-white-color);

@@ -16,8 +16,18 @@
 .header-divider {
     display: grid;
     grid-template-rows: 50%;
-    grid-template-columns: 87% 13%;
+    grid-template-columns: 89% 13%;
     gap: 1rem;
+
+    @media screen and (max-width: 1500px) {
+        grid-template-columns: 80% 13%;
+        gap: 1rem;
+    }
+
+    @media screen and (max-width: 1500px) {
+        grid-template-columns: 80% 13%;
+        gap: 1rem;
+    }
 }
 
 .input-icon {
@@ -38,6 +48,35 @@
     grid-template-rows: 40px;
     grid-template-columns: 1fr 50px;
     margin-top: 10px;
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 250px 50px;
+    }
+
+    @media screen and (max-width: 780px) {
+        grid-template-columns: 230px 50px;
+    }
+
+    @media screen and (max-width: 670px) {
+        grid-template-columns: 200px 50px;
+    }
+
+    @media screen and (max-width: 630px) {
+        grid-template-columns: 180px 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 150px 50px;
+    }
+
+    @media screen and (max-width: 550px) {
+        grid-template-columns: 120px 50px;
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: 80px 50px;
+        padding-left: 2rem;
+    }
 
 
 }
@@ -78,6 +117,10 @@
     &:hover {
         background-color: var(--var-hover-color);
     }
+
+    @media screen and (max-width: 730px) {
+        display: none;
+    }
 }
 
 
@@ -91,6 +134,11 @@
     float: right;
     cursor: pointer;
     justify-content: end;
+
+    @media screen and (max-width: 550px) {
+        grid-template-columns: 60% 60% 1fr;
+    }
+
 }
 
 .cat-profile {
