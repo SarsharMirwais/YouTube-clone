@@ -212,13 +212,12 @@
     .bar0 {
       grid-template-columns: 36px 1fr;
       padding-left: 1px; } }
+  @media screen and (max-width: 550px) {
+    .bar0 {
+      padding-left: 30px; } }
   @media screen and (max-width: 500px) {
     .bar0 {
-      grid-template-columns: 40px 1fr;
-      padding-left: 0px; } }
-  @media screen and (max-width: 330px) {
-    .bar0 {
-      padding-left: 1px; } }
+      grid-template-columns: 40px 1fr; } }
 
 .youtube-icon {
   margin-top: 10px;
@@ -259,6 +258,9 @@
   margin-top: 5px;
   padding-left: 10px;
   cursor: pointer; }
+  @media screen and (max-width: 550px) {
+    .pending {
+      display: none; } }
 
 .bar1 {
   display: grid;

@@ -62,14 +62,16 @@
         padding-left: 1px;
     }
 
-    @media screen and (max-width: 500px) {
-        grid-template-columns: 40px 1fr;
-        padding-left: 0px;
+    @media screen and (max-width: 550px) {
+        padding-left: 30px;
     }
 
-    @media screen and (max-width: 330px) {
-        padding-left: 1px;
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 40px 1fr;
+
     }
+
+    @media screen and (max-width: 330px) {}
 
 
 
@@ -130,6 +132,10 @@
     margin-top: 5px;
     padding-left: 10px;
     cursor: pointer;
+
+    @media screen and (max-width: 550px) {
+        display: none;
+    }
 }
 
 .bar1 {
