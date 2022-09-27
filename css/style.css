@@ -172,6 +172,9 @@
   @media screen and (max-width: 1300px) {
     .sidebars {
       min-width: 7vw; } }
+  @media screen and (max-width: 550px) {
+    .sidebars {
+      display: none; } }
   @media screen and (max-width: 405px) {
     .sidebars {
       display: none; } }
@@ -536,7 +539,7 @@ body {
 
 .n-profile {
   display: grid;
-  grid-template-columns: 17% 22% 60%;
+  grid-template-columns: 17% 32% 51%;
   padding-top: 10px; }
 
 .person-name {
@@ -587,7 +590,7 @@ body {
 
 .new-like {
   display: grid;
-  grid-template-columns: 15% 6% 15% 15% 5.5%;
+  grid-template-columns: 21% 12% 21% 20% 11.5%;
   justify-content: end;
   align-items: center;
   gap: 2rem; }
@@ -601,7 +604,7 @@ body {
   text-align: center;
   align-items: center;
   background-color: var(--var-dark1-color);
-  padding: 0px 4px;
+  padding: 8px;
   border-radius: 30px;
   cursor: pointer; }
   .like-1:hover {

@@ -10,6 +10,10 @@
         min-width: 7vw;
     }
 
+    @media screen and (max-width: 550px) {
+        display: none;
+    }
+
     @media screen and (max-width: 405px) {
         display: none;
     }
