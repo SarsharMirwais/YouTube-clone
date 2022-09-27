@@ -7,17 +7,17 @@
   position: sticky;
   top: 0; }
 
-.header-divider {
+.header-divider1 {
   display: grid;
   grid-template-rows: 50%;
-  grid-template-columns: 89% 13%;
+  grid-template-columns: 86% 13%;
   gap: 1rem; }
   @media screen and (max-width: 1500px) {
-    .header-divider {
+    .header-divider1 {
       grid-template-columns: 80% 13%;
       gap: 1rem; } }
   @media screen and (max-width: 1500px) {
-    .header-divider {
+    .header-divider1 {
       grid-template-columns: 80% 13%;
       gap: 1rem; } }
 
