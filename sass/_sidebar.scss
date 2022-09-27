@@ -41,6 +41,8 @@
 
 
 
+
+
 }
 
 .bar0 {
@@ -110,6 +112,7 @@
     }
 
     @media screen and (max-width: 550px) {
+        display: none;
         height: 18px;
         width: 60px;
     }
