@@ -65,7 +65,8 @@
     }
 
     @media screen and (max-width: 550px) {
-        padding-left: 30px;
+        display: none;
+        padding-left: 1px;
     }
 
     @media screen and (max-width: 500px) {

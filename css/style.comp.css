@@ -5,14 +5,21 @@
   grid-template-columns: 1fr;
   grid-template-rows: 55px 82px;
   position: sticky;
-  top: 0;
-  z-index: 1; }
+  top: 0; }
 
-.header-divider {
+.header-divider1 {
   display: grid;
   grid-template-rows: 50%;
-  grid-template-columns: 87% 13%;
+  grid-template-columns: 86% 13%;
   gap: 1rem; }
+  @media screen and (max-width: 1500px) {
+    .header-divider1 {
+      grid-template-columns: 80% 13%;
+      gap: 1rem; } }
+  @media screen and (max-width: 1500px) {
+    .header-divider1 {
+      grid-template-columns: 80% 13%;
+      gap: 1rem; } }
 
 .input-icon {
   display: grid;
@@ -26,6 +33,28 @@
   grid-template-rows: 40px;
   grid-template-columns: 1fr 50px;
   margin-top: 10px; }
+  @media screen and (max-width: 800px) {
+    .searching {
+      grid-template-columns: 250px 50px; } }
+  @media screen and (max-width: 780px) {
+    .searching {
+      grid-template-columns: 230px 50px; } }
+  @media screen and (max-width: 670px) {
+    .searching {
+      grid-template-columns: 200px 50px; } }
+  @media screen and (max-width: 630px) {
+    .searching {
+      grid-template-columns: 180px 50px; } }
+  @media screen and (max-width: 600px) {
+    .searching {
+      grid-template-columns: 150px 50px; } }
+  @media screen and (max-width: 550px) {
+    .searching {
+      grid-template-columns: 120px 50px; } }
+  @media screen and (max-width: 450px) {
+    .searching {
+      grid-template-columns: 80px 50px;
+      padding-left: 2rem; } }
 
 .finding {
   font-size: 20px;
@@ -55,6 +84,9 @@
   cursor: pointer; }
   .microphone:hover {
     background-color: var(--var-hover-color); }
+  @media screen and (max-width: 730px) {
+    .microphone {
+      display: none; } }
 
 .notification-icon {
   display: grid;
@@ -64,6 +96,9 @@
   float: right;
   cursor: pointer;
   justify-content: end; }
+  @media screen and (max-width: 550px) {
+    .notification-icon {
+      grid-template-columns: 60% 60% 1fr; } }
 
 .cat-profile {
   height: 40px;
@@ -78,7 +113,8 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 15px;
   padding: 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 1rem; }
 
 .new {
   background-color: var(--var-dark1-color); }
@@ -136,6 +172,12 @@
   @media screen and (max-width: 1300px) {
     .sidebars {
       min-width: 7vw; } }
+  @media screen and (max-width: 550px) {
+    .sidebars {
+      display: none; } }
+  @media screen and (max-width: 405px) {
+    .sidebars {
+      display: none; } }
 
 .sidebar {
   background-color: var(--var-white-color);
@@ -158,7 +200,25 @@
   grid-template-rows: 1fr;
   grid-template-columns: 50px 1fr;
   padding-left: 20px;
-  align-items: center; }
+  align-items: center;
+  display: grid;
+  grid-row: 1/ 2;
+  grid-column: 1/ 2;
+  position: fixed;
+  align-items: center;
+  padding-top: 1rem;
+  z-index: 99999; }
+  @media screen and (max-width: 600px) {
+    .bar0 {
+      grid-template-columns: 36px 1fr;
+      padding-left: 1px; } }
+  @media screen and (max-width: 550px) {
+    .bar0 {
+      display: none;
+      padding-left: 1px; } }
+  @media screen and (max-width: 500px) {
+    .bar0 {
+      grid-template-columns: 40px 1fr; } }
 
 .youtube-icon {
   margin-top: 10px;
@@ -167,17 +227,42 @@
   grid-template-columns: 60px 2fr;
   background-color: var(--var-white-color); }
 
-.youtube-logo {
-  height: 22px;
-  width: 90px;
+.youtube-icon {
+  height: 27px;
+  width: 100px;
   align-items: center;
-  margin-top: 8px;
-  cursor: pointer; }
+  margin-bottom: 8px;
+  cursor: pointer;
+  margin-right: 1rem; }
+  @media screen and (max-width: 670px) {
+    .youtube-icon {
+      height: 18px;
+      width: 77px; } }
+  @media screen and (max-width: 600px) {
+    .youtube-icon {
+      height: 18px;
+      width: 77px; } }
+  @media screen and (max-width: 550px) {
+    .youtube-icon {
+      display: none;
+      height: 18px;
+      width: 60px; } }
+  @media screen and (max-width: 500px) {
+    .youtube-icon {
+      height: 18px;
+      width: 60px; } }
+  @media screen and (max-width: 330px) {
+    .youtube-icon {
+      height: 14px;
+      width: 50px; } }
 
 .pending {
   margin-top: 5px;
   padding-left: 10px;
   cursor: pointer; }
+  @media screen and (max-width: 550px) {
+    .pending {
+      display: none; } }
 
 .bar1 {
   display: grid;
@@ -188,7 +273,8 @@
       width: 10px;
       display: grid;
       grid-template-rows: repeat(4, 50);
-      grid-template-columns: 100px; } }
+      grid-template-columns: 100px;
+      gap: 1rem; } }
   .bar1--1 {
     display: grid;
     grid-template-rows: 1fr;
@@ -226,6 +312,10 @@
     font-weight: 500;
     text-decoration: none;
     color: var(--var-black-color); }
+    @media screen and (max-width: 600px) {
+      .bar1--h {
+        font-size: 8px;
+        font-weight: 500; } }
   .bar1--h2 {
     font-size: 12px;
     font-weight: 500;
@@ -235,6 +325,16 @@
       .bar1--h2 {
         text-align: center;
         transform: translateX(-18px); } }
+    @media screen and (max-width: 600px) {
+      .bar1--h2 {
+        font-size: 8px;
+        font-weight: 500;
+        transform: translateX(-12px); } }
+    @media screen and (max-width: 460px) {
+      .bar1--h2 {
+        font-size: 6px;
+        font-weight: 500;
+        transform: translateX(-6px); } }
 
 .bar2 {
   display: grid;
@@ -295,15 +395,6 @@
   height: 31px;
   width: 33px; }
 
-.fix-logo {
-  display: grid;
-  grid-row: 1/ 2;
-  grid-column: 1/ 2;
-  position: fixed;
-  align-items: center;
-  padding-top: 1rem;
-  z-index: 99999; }
-
 .subscriptions {
   background-color: var(--var-white-color);
   display: grid;
@@ -318,6 +409,9 @@
   overflow-x: auto;
   overflow-x: scroll;
   overflow-y: hidden; }
+  @media screen and (max-width: 550px) {
+    .subscriptions {
+      padding-left: 4rem; } }
 
 .subscriptions::-webkit-scrollbar {
   width: 0; }
@@ -386,32 +480,61 @@ body {
   grid-template-rows: 60px 60px 4fr;
   grid-template-columns: 15% 6.1fr;
   position: relative; }
+  @media screen and (max-width: 550px) {
+    .container {
+      grid-template-rows: 60px 60px 4fr;
+      grid-template-columns: 1fr; } }
 
-.next-page {
+.page2 {
+  height: 100%;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 60%;
-  grid-auto-rows: 1fr;
-  gap: 2fr;
-  grid-row: 2/ -1;
-  grid-column: 1/2;
-  padding-left: 2rem; }
+  grid-template-columns: 1fr;
+  grid-template-rows: 55px 4fr;
+  gap: 1rem; }
+
+.page2-header {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  grid-template-rows: 55px;
+  grid-template-columns: 5% 1fr 10%;
+  gap: 2rem; }
+
+.page2-main {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  padding-left: 10rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  height: 90vh;
+  max-width: 70%; }
+  @media screen and (max-width: 950px) {
+    .page2-main {
+      padding-left: 5rem; } }
+  @media screen and (max-width: 800px) {
+    .page2-main {
+      padding-left: 5rem; } }
+  @media screen and (max-width: 768px) {
+    .page2-main {
+      padding-left: 5rem; } }
+  @media screen and (max-width: 550px) {
+    .page2-main {
+      padding-left: 5rem; } }
 
 .next-page2 {
   display: grid;
-  height: 90vh;
-  width: 70%;
-  margin-top: 2px;
   grid-template-rows: auto 20% 20%; }
-
-.img-relatives {
-  grid-row: 2/ -1;
-  grid-column: 2/-1;
-  padding-left: 2rem; }
 
 .some-comment {
   background-color: var(--var-hover-color);
   border-radius: 15px;
   margin-bottom: 3rem; }
+  @media screen and (max-width: 1300px) {
+    .some-comment {
+      margin-bottom: -6rem;
+      margin-top: 6rem; } }
 
 .next-para {
   font-size: 18px;
@@ -440,8 +563,11 @@ body {
 
 .n-profile {
   display: grid;
-  grid-template-columns: 1fr 1fr 5fr;
+  grid-template-columns: 17% 32% 51%;
   padding-top: 10px; }
+  @media screen and (max-width: 1300px) {
+    .n-profile {
+      grid-template-columns: 18% 32% 51%; } }
 
 .person-name {
   font-size: 18px;
@@ -475,7 +601,7 @@ body {
   align-items: center;
   padding-left: 7rem; }
   .ring--button {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
     padding: 10px 20px;
     border-radius: 30px;
@@ -491,16 +617,18 @@ body {
 
 .new-like {
   display: grid;
-  grid-template-columns: 18% 10% 20% 20% 8.5%;
-  justify-content: center;
+  grid-template-columns: 21% 12% 21% 20% 11.5%;
+  justify-content: end;
   align-items: center;
-  padding-left: 10rem;
-  gap: 1rem; }
+  gap: 2rem; }
+  @media screen and (max-width: 1300px) {
+    .new-like {
+      gap: 1rem; } }
 
 .like-1 {
   display: grid;
-  grid-template-columns: 20% auto;
-  font-size: 15px;
+  grid-template-columns: 30% 61%;
+  font-size: 18px;
   font-weight: 400;
   color: var(--var-black-color);
   text-align: center;
@@ -511,3 +639,70 @@ body {
   cursor: pointer; }
   .like-1:hover {
     background-color: var(--var-hover-color); }
+  @media screen and (max-width: 1400px) {
+    .like-1 {
+      grid-template-columns: 40% 61%; } }
+
+.bar-page2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50px 1fr;
+  padding-left: 20px;
+  align-items: center; }
+
+.youtube-icon {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 60px 2fr;
+  background-color: var(--var-white-color); }
+
+.youtube-logo {
+  height: 22px;
+  width: 90px;
+  align-items: center;
+  margin-top: 8px;
+  cursor: pointer; }
+
+.pending {
+  margin-top: 5px;
+  padding-left: 10px;
+  cursor: pointer; }
+
+.input-icon2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 55% auto;
+  grid-gap: 10px;
+  justify-content: center; }
+
+.searching-page2 {
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 1fr 50px;
+  margin-top: 10px; }
+
+.microphone2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  padding: 8px 10px 4px 10px;
+  border-radius: 70px;
+  background-color: var(--var-dark1-color);
+  cursor: pointer; }
+
+.second-page {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr; }
+
+.top {
+  background-color: red; }
+
+.middle {
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 1fr; }
