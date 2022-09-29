@@ -56,7 +56,6 @@
     }
 
     &--right {
-        background-color: rgb(44, 247, 17);
         display: grid;
 
         grid-template-rows: 1fr;
@@ -187,19 +186,46 @@
 
 .one1 {
     display: grid;
-    grid-template-rows: 2fr repeat(5, 4fr);
+    grid-template-rows: repeat(6, 4fr);
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.right1 {
-    background-color: yellow;
-}
-
 .right2 {
-    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr;
+    cursor: pointer;
+
+    @media screen and (max-width: 1060px) {
+        display: none;
+    }
 
 }
+
+.recently-img {
+    height: 100%;
+    width: 100%;
+}
+
+.recent-detials {
+    padding-left: 1rem;
+
+}
+
+.recent-title1 {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--var-black-color);
+}
+
+.recent-title2 {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--var-dark4-color);
+}
+
+
 
 
 .first2 {
