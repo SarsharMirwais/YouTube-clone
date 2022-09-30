@@ -5,7 +5,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 55px 82px;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 9999; }
 
 .header-divider1 {
   display: grid;
@@ -471,6 +472,7 @@ body {
   --var-dark1-color: rgb(243, 237, 237);
   --var-hover-color: rgb(231, 227, 227);
   --var-dark2-color: rgb(214, 213, 213);
+  --var-dark5-color: rgb(226, 224, 224);
   --var-dark3-color: rgb(88, 87, 87);
   --var-dark4-color: rgb(36, 34, 34); }
 
@@ -683,7 +685,7 @@ body {
   color: var(--var-black-color);
   text-align: center;
   align-items: center;
-  background-color: var(--var-dark1-color);
+  background-color: var(--var-dark5-color);
   padding: 2px 8px 2px 8px;
   border-radius: 20px;
   cursor: pointer; }
